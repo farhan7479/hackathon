@@ -8,7 +8,7 @@ import "../styles/HomePage.css";
 const HomePage = () => {
   
   return (
-    <Layout title={"ALl Products - Best offers "}>
+    <Layout title={"Welcome  "}>
      
       <div className="container-fluid row mt-3 home-page">
         

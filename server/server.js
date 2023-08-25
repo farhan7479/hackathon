@@ -30,8 +30,11 @@ app.use(morgan("dev"));
 //routes
 
 import authRoutes from "./routes/authRoute.js";
+import productRoutes from "./routes/productRoute.js";
+
 
 app.use("/api/v1/auth", authRoutes);
+app.use("/api/v1/product", productRoutes);
 
 
 
