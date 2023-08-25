@@ -6,13 +6,13 @@ import toast from "react-hot-toast";
 import "../../styles/AuthStyle.css";
 
 const Register = () => {
-  const [name, setName] = useState("John Doe");
-  const [email, setEmail] = useState("john@example.com");
-  const [password, setPassword] = useState("password123");
-  const [phone, setPhone] = useState("123-456-7890");
-  const [address, setAddress] = useState("123 Main St, City, Country");
-  const [answer, setAnswer] = useState("42");
-  const [role, setRole] = useState("Needy"); // Setting default role
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("");
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [answer, setAnswer] = useState("");
+  const [role, setRole] = useState(""); // Setting default role
   const [description, setDescription] = useState("I'm in need of food "); // Setting default description
   const navigate = useNavigate();
 
@@ -121,8 +121,8 @@ const Register = () => {
               className="form-select"
               required
             >
-              <option value="Needy">Needy</option>
-              <option value="Donar">Donar</option>
+              <option value="Solver">Solver</option>
+              <option value="Ask Question">Ask Question</option>
             </select>
           </div>
           <div className="mb-3">

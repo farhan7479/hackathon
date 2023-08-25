@@ -32,7 +32,7 @@ const Header = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
           <Link to="/" className="navbar-brand">
-            Prevent Waste Food
+            Let's Solve
           </Link>
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
@@ -64,14 +64,14 @@ const Header = () => {
                   {auth.user.name}
                 </NavLink>
                 <ul className="dropdown-menu">
-                  {auth.user.role !== "Needy" ? (
+                  {auth.user.role !== "Solver" ? (
                     <li>
                       <NavLink
                         
                         to="/uploadFood"
                         className="dropdown-item"
                       >
-                        Donate Food
+                        Solve Problem
                       </NavLink>
                     </li>
                   ) : null /* You can replace this comment with actual logic if needed */}
